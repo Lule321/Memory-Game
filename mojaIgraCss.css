@@ -1,0 +1,182 @@
+.title{
+    text-align: center;
+    font-size: calc(8px + 4vh);
+    text-transform: uppercase;
+
+
+    font-family: 'Roboto', sans-serif;
+}
+
+body
+{
+    background-color: #fcf9f8;
+}
+
+.div-game
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 6vh;
+}
+
+.gameCol
+{
+    border: 3px solid black;
+    padding: 0;
+
+}
+
+
+
+#game
+{
+    background-image: url(./images/JobFair21_logo.png);
+    background-size: cover; 
+    background-position: center;
+    border:solid 2px orange;
+    border-collapse: collapse;
+}
+
+.gameImg
+{
+    display: block;
+    object-fit: contain;
+}
+
+.div-bottom
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+
+    padding-top: 3vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.div-time
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.div-button
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#time
+{
+    margin: 0;
+    padding-left: 5px;
+    font-size: calc(10px + 3vh);;
+}
+
+#label-time
+{
+    font-size: calc(10px + 3vh);
+}
+
+#restart
+{
+    font-size: calc(10px + 3vh);
+    font-family:  Roboto, sans-serif;
+    border-radius: 6px;
+}
+
+#restart:hover
+{
+    border: 3px solid rgb(9, 190, 9);
+}
+
+.div-hidden
+{
+    visibility: hidden;
+    display: flex;
+    top: calc(15% + 2vh);
+    left: 20%;
+    justify-content: left;
+    flex-direction: column;
+    position:absolute;
+    width: 60%;
+    background-color:rgb(236, 236, 245);
+    font-family: Roboto, sans-serif;
+    border-radius: 6px;
+}
+
+.head-hidden
+{
+    padding-left: 10px;
+    font-size: calc(3vw + 1vh);
+}
+.popup-txt
+{
+    padding-left: 10px;
+    font-size: calc(1vw + 1vh + 2pt);
+}
+
+#inform-confirm
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 70%;
+    margin-right: 10%;
+    border-radius: 3px;
+    height: 5vh;
+
+}
+
+#inform-confirm:hover
+{
+    border:2px solid rgb(9, 190, 9);
+}
+
+#div-shadow
+{
+    visibility: hidden;
+    width:100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    background-color: rgba(0,0,0,0.4);
+}
+
+#form-finished
+{
+    display:flex;
+    flex-direction:column;
+    width : calc(50% + 2vh);
+}
+
+.input-finished
+{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: calc(1vw + 1vh);
+}
+
+#submit-finished
+{
+    margin-top: (1vw + 5px);
+    margin-bottom: 20px;
+
+    border-radius: 3px;
+
+    height: 4vh;
+}
+
+#finished-info
+{
+    margin-bottom: 15px;
+}
+
+#submit-finished:hover
+{
+    border:2px solid rgb(9, 190, 9);
+}

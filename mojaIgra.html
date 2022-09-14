@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mojaIgraCss.css">
+    <title>Igra memorije</title>
+    <script src= "mojaIgraSkripta.js"></script>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+    <!--linke za roboto stil jedan moze da se izbaci, ako se promeni u title-u stil-->
+</head>
+
+<body>
+    <div id= "div-shadow">
+    <div id="popup-inform" class = "div-hidden">
+    <h1 id= "popup-head" class = "head-hidden">Način igranja</h1>
+    <span class= "popup-txt">Igra počinje kad otvorite prvo polje.</span>
+    <span class= "popup-txt">Potrebno je da nađete parove slika što brže i koristeći što manje klikova.</span>
+    <span class= "popup-txt">Najbolja 3 takmičara dobijaju vredne nagrade!!!</span>
+    <span class= "popup-txt">Bodovi su negativni.</span>
+    <button id= "inform-confirm">OK</button>
+    </div>
+
+
+    <div id= "div-finished" class = "div-hidden">
+        <h1 id= "finished-head" class = "head-hidden">Čestitamo!!!</h1>
+        <span class= "popup-txt" id= "points"></span>
+        
+        <span class= "popup-txt" id = "finished-info">Da bi učestvovao u nagradnoj igri, potrebne su nam ove informacije.</span>
+
+        <form action="" id = "form-finished">
+            <label for="input-name" class = "popup-txt">Ime:</label>
+            <input type="text" id = "input-name" class = "input-finished" name= "userName" required>
+            <label for="input-surname" class = "popup-txt" >Prezime:</label>
+            <input type="text" id = "input-surname" class = "input-finished" name= "userSurname" required>
+            <label for="input-email" class = "popup-txt">Mejl:</label>
+            <input type="email" id = "input-email" class = "input-finished" name= "userEmail" required>
+            <input type="submit" value = "Prijavi se" class = "input-finished" id = "submit-finished" >
+
+        </form>
+    </div>
+    </div>
+
+    <div class= "div-title">
+        <h1 class= "title"> JobFair21 - Igra memorije</h1>
+        <hr>
+    </div>
+
+
+    <div class= "div-game">
+
+        <table id= "game" cellpadding = "0">
+            
+        </table>
+
+    </div>
+
+
+    <div class= "div-bottom">
+
+        <div class= "div-button">
+            <button id = "restart">
+                Restartuj
+            </button>
+        </div>
+        <div class= "div-time">
+            <label for="time" id = "label-time">Vreme: </label>
+            <p id = "time">00:00</p>
+        </div>
+
+    </div>
+</body>
+</html>
